@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/tvCountry"
+                android:text="Country Name"
+                android:textSize="20dp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/expandableLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/colorBlack"
+                    android:layout_width = "match_parent"
+                    android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:id="@+id/imageViewflag"
+                    android:src="@drawable/india"
+                    android:layout_weight=".8"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:layout_weight=".8"
+                    android:layout_gravity="center"
+                    android:text="Capital: "
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvCapital"
+                    android:layout_weight="1.4"
+                    android:layout_gravity="center"
+                    android:text="New Delhi"
+                    android:textSize="18dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+         <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </RelativeLayout>-->
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
